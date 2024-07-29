@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./sytle.css">
+    <title>Lista de contatos by Dev LC</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./assets/images/Telefone-Header.png" alt="Telefone Header">
+            <h1>Seus contatos</h1>
+        </header>
+        <form id="formContact">
+            <label for="contactName">Nome do contato</label><br>
+            <input type="text" id="contactName" required placeholder="Ex.: Lucas Cristofer"><br>
+            <label for="numberContact">Número do contato</label><br>
+            <input type="tel" id="numberContact" required placeholder="Ex.: 11 99999-9999" maxlength="15" pattern="\d{2} \d{5}-\d{4}"><br>
+            <small>Formato esperado: 11 99999-9999</small><br>
+            <button type="submit">Salvar</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Número</th>
+                    <th>Ação</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
